@@ -418,7 +418,8 @@ img {
 .container-footer {
     margin-right: auto;
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+    margin-right: 120px;
 }
 
 .container-footer-two {
