@@ -199,7 +199,7 @@ img {
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-sone:hover,
@@ -232,7 +232,6 @@ img {
 
 .item-stwo {
     width: calc((100% - 72px) / 4);
-    height: 112px;
 }
 
 .icons-stwo {
@@ -240,6 +239,7 @@ img {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
+    height: 112px;
     padding: 24px 100px;
     background: #f4f4fd;
     align-items: center;
@@ -356,19 +356,8 @@ img {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4d5ae5;
-    transform: translateY(-100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-sfour-overlay:hover .overlay,
-.item-sfour-overlay:focus .overlay {
+.item-sfour-overlay:hover .parag-overlay,
+.item-sfour-overlay:focus .parag-overlay {
     transform: translateY(0%);
 }
 
@@ -378,9 +367,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4d5ae5;
+    transform: translateY(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-stwo,
