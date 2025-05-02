@@ -329,11 +329,6 @@ img {
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.image-sfour {
-    width: 360px;
-    height: 300px;
-}
-
 .header-sfour{
     margin-bottom: 8px;
 }
@@ -344,6 +339,10 @@ img {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-sfour {
+    width: 360px;
 }
 
 .card-sfour-overlay {
@@ -419,6 +418,9 @@ img {
     margin-right: auto;
     display: flex;
     align-items: baseline;
+}
+
+.logo-part-container {
     margin-right: 120px;
 }
 
